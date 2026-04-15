@@ -1,10 +1,10 @@
 # Daily-Standup
 ---
-## Data/Time
-In PST
+## Date/Time
+[In PST]
 ---
 ## Participants
-Insert participants
+[Insert participants]
 ---
 ## Agenda
 1. [item 1]

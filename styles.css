@@ -77,7 +77,7 @@ li:has(i) {
     color:  #FF00FF;
 }
 button:hover {
-    background-color: color(display-p3 1 0 0);
+    background-color: color(rec2020 1 0 0);
 }
 .fancy-text {
 font-family: "Playfair Display",Helvetica, sans-serif,serif;

@@ -1,3 +1,10 @@
+@media (min-width: 600px) {
+  .header {grid-area: 1 / span 6;}
+  .menu {grid-area: 2 / span 1;}
+  .content {grid-area: 2 / span 4;}
+  .facts {grid-area: 2 / span 1;}
+  .footer {grid-area: 3 / span 6;}
+}
 
 .box{
     padding: 0.4em 0.2em 0.4em 0.2em;
@@ -19,15 +26,38 @@ header {
     text-align: center;
     margin-right: 5mm;
 }
-h3, h2 {
+h1, h2 {
     color : color-mix(in hsl, hsl(200 50 80), coral);
-    text-decoration: underline;
     text-align: justify;
     font-family: sans-serif;
     margin : 1.5px 1.5px 1.5px 1.5px;
     display : block;
     position : sticky;
 }
+
+h2 h3 {
+    justify-content: flex-start;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+li ~ li {
+    align-self: start;
+}
+
+fieldset label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label + input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+select > option {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 
 input[type] {
     display : inline;
@@ -36,6 +66,11 @@ input[type] {
     max-width: 20vw;
     min-width: 1vw;
     position : relative;
+}
+
+li:has(i) {
+  background-color: lightblue;
+  font-weight: bold;
 }
 
 .totally-existing-class {
@@ -47,6 +82,24 @@ button:hover {
 .fancy-text {
 font-family: "Playfair Display",Helvetica, sans-serif,serif;
 display : inline;
+}
+
+.flex-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li {
+        background-color: bisque;
+    }
+}
+
+
+ul.grid {
+    display : grid;
+    justify-items: center;
+    grid-auto-flow: row;
+    grid-template-rows: auto;
 }
 #recording {
     color : hsl(10,10%,25%);

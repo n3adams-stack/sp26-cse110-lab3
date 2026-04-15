@@ -26,15 +26,38 @@ header {
     text-align: center;
     margin-right: 5mm;
 }
-h3, h2 {
+h1, h2 {
     color : color-mix(in hsl, hsl(200 50 80), coral);
-    text-decoration: underline;
     text-align: justify;
     font-family: sans-serif;
     margin : 1.5px 1.5px 1.5px 1.5px;
     display : block;
     position : sticky;
 }
+
+h2 h3 {
+    justify-content: flex-start;
+    text-decoration: underline;
+    font-family: sans-serif;
+}
+
+li ~ li {
+    align-self: start;
+}
+
+fieldset label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+label + input {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+select > option {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
 
 input[type] {
     display : inline;
@@ -43,6 +66,11 @@ input[type] {
     max-width: 20vw;
     min-width: 1vw;
     position : relative;
+}
+
+li:has(i) {
+  background-color: lightblue;
+  font-weight: bold;
 }
 
 .totally-existing-class {
@@ -61,9 +89,13 @@ display : inline;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    li {
+        background-color: bisque;
+    }
 }
 
-.grid {
+
+ul.grid {
     display : grid;
     justify-items: center;
     grid-auto-flow: row;

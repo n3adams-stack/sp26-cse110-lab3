@@ -1,10 +1,4 @@
 
-@import url('https://googleapis.com');
-
-.color-display-p3 {
-    background-color: color(display-p3 1 0.5 0);
-}
-
 .box{
     padding: 0.4em 0.2em 0.4em 0.2em;
     margin : auto;
@@ -22,26 +16,38 @@ header {
     margin-top: 0.5cm;
     margin-bottom: 0.5cm;
     margin-left: 5mm;
+    text-align: center;
     margin-right: 5mm;
 }
 h3, h2 {
-    color : color-mix(in srgb, color green, transparent 10%);
+    color : color-mix(in hsl, hsl(200 50 80), coral);
     text-decoration: underline;
-    text-align: left;
+    text-align: justify;
     font-family: sans-serif;
     margin : 1.5px 1.5px 1.5px 1.5px;
+    display : block;
+    position : sticky;
 }
 
+input[type] {
+    display : inline;
+    height : 2vh;
+    width : 8vw;
+    max-width: 20vw;
+    min-width: 1vw;
+    position : relative;
+}
 
 .totally-existing-class {
     color:  #FF00FF;
 }
+button:hover {
+    color: color(display-p3 1 0.5 0);
+}
 .fancy-text {
 font-family: "Playfair Display",Helvetica, sans-serif,serif;
+display : inline;
 }
-#Form {
-    color : hsl(10,10,25);
-}
-[input=text] {
-    text-align: justify;
+#recording {
+    color : hsl(10,10%,25%);
 }

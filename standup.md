@@ -3,10 +3,12 @@
 ## Date/Time
 
 In PST
+
 ---
 ## Participants
 
 Insert participants
+
 ---
 ## Agenda
 1. [item 1]

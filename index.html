@@ -4,10 +4,14 @@
     <title>Totally Legit Meeting Minutes</title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="./screenshots/kitty.png">
-   </head>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        </style>
+    <link rel="stylesheet" href="styles.css">
+    </head>
   <body>
     <div class="totally-existing-class"></div>
-    <header>No CSS = plain jane site</header>
+    <header>Some CSS = maybe better site</header>
     <nav>
         <ul>
             <li><a href="#Notes">Notes</a></li>
@@ -53,12 +57,12 @@
         </details>
     </main>
     
-    <section id="Form">
+    <section id="Form" class="box">
         <form>
             <fieldset>
                 <label>Your name:</label>
                 <input type="text"><br><br>
-                <label>Sell my soul?</label>
+                <label class="fancy-text">Sell my soul?</label>
                 <input type="checkbox"><br><br>
                 <label>Totally functional button: </label>
                 <input type="radio"><br><br>
@@ -87,6 +91,6 @@
             </datalist>
     </section>
 
-    <footer>Trouble with the site? Too bad!</footer>
+    <footer class="totally-existing-class">Trouble with the site? Too bad!</footer>
   </body>
 </html>
